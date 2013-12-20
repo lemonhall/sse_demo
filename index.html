@@ -1,0 +1,11 @@
+<h1></h1>
+
+<script type="text/javascript">
+	
+	var sseSource = new EventSource("/sse");
+	
+	sseSource.addEventListener("message", function(msg){
+		alert(msg);
+	}, false);
+
+</script>
